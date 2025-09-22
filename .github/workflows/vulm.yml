@@ -28,6 +28,7 @@ jobs:
   job2vulm:
     runs-on: ubuntu-latest
     steps:
-      - run: |
+      - name: Vu step job2
+        run: |
           echo Job2 lenh1
           echo Job2 lenh2
