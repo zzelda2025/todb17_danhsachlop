@@ -18,3 +18,11 @@ Huy_jobs:
         run: |
           echo Huy add other actions to build,
           echo Huy test, and deploy your project.
+
+Huy_job_2:
+  build_2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+        echo Huy build job 22
+        echo Huy done
