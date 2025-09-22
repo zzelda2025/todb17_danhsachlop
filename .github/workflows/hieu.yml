@@ -34,4 +34,4 @@ jobs:
           echo test Hieu, and deploy project.
   build_job2:
     runs-on: ubuntu-latest
-      run: echo Hieu job 2
+    run: echo Hieu job 2
