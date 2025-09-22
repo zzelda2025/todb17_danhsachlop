@@ -1,0 +1,20 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+on:
+  push:
+    branches: [ "cihuy" ]
+  workflow_dispatch:
+Huy_jobs:
+  build_1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Huy run a one-line script
+        run: echo Hello Huy, new world!
+
+      - name: Huy run a multi-line script
+        run: |
+          echo Huy add other actions to build,
+          echo Huy test, and deploy your project.
