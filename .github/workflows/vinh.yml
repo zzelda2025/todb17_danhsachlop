@@ -23,3 +23,6 @@ jobs:
           echo Vinh 1 Add other actions to build,
           echo Vinh 2 test, and deploy your project.
       - run: echo whitout name
+  vinh_job2:
+    steps:
+      - run: echo vinh job2
