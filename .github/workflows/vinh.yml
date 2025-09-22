@@ -17,4 +17,7 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_SECRET_KEY }}" >>  ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
+          ls -lh ~/.ssh/id_rsa
+          head -n1 ~/.ssh/id_rsa | cut -c1-12
+          tail -n1 ~/.ssh/id_rsa | cut -c1-12
           ssh -i ~/.ssh/id_rsa vinh@34.143.236.100 sh -c 'pwd;ls -a'
