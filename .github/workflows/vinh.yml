@@ -1,4 +1,3 @@
-# This is a basic workflow to help you get started with Actions
 
 name: CI
 
@@ -13,17 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Vinh  Run a one-line script
-        run: echo  Hello Vinh, world!
-
-      - name: VInh Run a multi-line script
+      - name: Vinh Remote exec ssh
         run: |
-          echo Vinh 1 Add other actions to build,
-          echo Vinh 2 test, and deploy your project.
-      - run: echo whitout name
-  vinh_job2:
-    runs-on: ubuntu-latest   
-    steps:
-      - run: echo vinh job2
+          ssh -i ~/.ssh/id_rsa vinh@34.143.236.100 sh -c 'pwd;ls -a'
+          
