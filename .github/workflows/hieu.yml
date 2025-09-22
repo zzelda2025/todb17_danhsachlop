@@ -33,6 +33,6 @@ jobs:
           echo Hieu line 1,
           echo test Hieu, and deploy project.
   build_job2:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       run: echo Hieu job 2
