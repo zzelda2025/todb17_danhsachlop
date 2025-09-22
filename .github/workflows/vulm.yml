@@ -3,7 +3,7 @@ name: CI
 
 on:
   push:
-    branches: [ "civulm" ]
+    branches: [ "ci_vulm" ]
 
   workflow_dispatch:
 
