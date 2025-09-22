@@ -15,6 +15,6 @@ jobs:
       - name: Vinh Remote exec ssh
         run: |
           mkdir -p ~/.ssh
-          echo ${{ secrets.SSH_SECRET_KEY }} >>  ~/.ssh/id_rsa
+          echo "${{ secrets.SSH_SECRET_KEY }}" >>  ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh -i ~/.ssh/id_rsa vinh@34.143.236.100 sh -c 'pwd;ls -a'
