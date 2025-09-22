@@ -5,7 +5,7 @@ on:
   push:
     branches: [ "cihuy" ]
   workflow_dispatch:
-Huy_jobs:
+jobs:
   build_1:
     runs-on: ubuntu-latest
     steps:
@@ -19,7 +19,6 @@ Huy_jobs:
           echo Huy add other actions to build,
           echo Huy test, and deploy your project.
 
-Huy_job_2:
   build_2:
     runs-on: ubuntu-latest
     steps:
