@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Hieu_CI
 
 # Controls when the workflow will run
 on:
@@ -34,4 +34,7 @@ jobs:
           echo test Hieu, and deploy project.
   build_job2:
     runs-on: ubuntu-latest
-    run: echo Hieu job 2
+    steps:
+
+     - name: one run only
+       run: echo Hieu job 2
