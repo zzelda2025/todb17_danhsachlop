@@ -20,7 +20,16 @@ jobs:
           ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa vinh@34.143.236.100 sh -c  "
             set -x 
             mkdir -p ~/civinh
+            
             echo 'git clone code neu chua co'
+            cd ~/civinh ; git clone git@github.com:zzelda2025/todb17_danhsachlop.git
+            
             echo 'git pull'
+            cd ~/civinh/todb17_danhsachlop
+            git checkout civinh; git pull
+            
             echo 'compose up'  
+            cd ~/civinh/todb17_danhsachlop
+            ./composeup.sh
+
             "
