@@ -22,14 +22,22 @@ jobs:
             mkdir -p ~/civinh
             
             echo 'git clone code neu chua co'
-            cd ~/civinh ; git clone git@github.com:zzelda2025/todb17_danhsachlop.git
+            cd ~/civinh 
             
+            if [ ! -d "~/civinh/todb17_danhsachlop/.git" ]; then
+              echo "Chưa có repo, tiến hành clone..."
+              git clone git@github.com:zzelda2025/todb17_danhsachlop.git
+            else
+              echo "Repo đã tồn tại rồi!"
+            fi
+
             echo 'git pull'
             cd ~/civinh/todb17_danhsachlop
             git checkout civinh; git pull
             
             echo 'compose up'  
-            cd ~/civinh/todb17_danhsachlop
+            cd ~/civinh/todb17_danhsachlop/app
             ./composeup.sh
+
 
             "
