@@ -37,7 +37,7 @@ jobs:
             
             echo 'compose up'  
             cd ~/civinh/todb17_danhsachlop/app
-            ./composeup.sh
+            NAME=TEL4VN ./composeup.sh
 
 
             "
